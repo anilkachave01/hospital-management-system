@@ -1,0 +1,119 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    animation: fadeIn 0.3s ease-out;
+}
+
+.modal.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: var(--radius-2xl);
+    max-width: 500px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: var(--shadow-2xl);
+    animation: slideUp 0.3s ease-out;
+    position: relative;
+}
+
+.modal-large {
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    font-size: 2rem;
+    color: var(--gray-400);
+    cursor: pointer;
+    transition: var(--transition-base);
+}
+
+.close:hover {
+    color: var(--error);
+    transform: rotate(90deg);
+}
+
+.modal-content h2 {
+    margin-bottom: 0.5rem;
+}
+
+.modal-subtitle {
+    color: var(--gray-600);
+    margin-bottom: var(--spacing-lg);
+}
+
+.modal-footer-text {
+    text-align: center;
+    margin-top: var(--spacing-md);
+    color: var(--gray-600);
+}
+
+.modal-footer-text a {
+    color: var(--primary-color);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.modal-footer-text a:hover {
+    text-decoration: underline;
+}
+
+.form-group {
+    margin-bottom: var(--spacing-md);
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--gray-700);
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border: 2px solid var(--gray-200);
+    border-radius: var(--radius-lg);
+    font-family: inherit;
+    font-size: 1rem;
+    transition: var(--transition-base);
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+.doctor-details-card {
+    background: var(--gray-50);
+    padding: 1.5rem;
+    border-radius: var(--radius-lg);
+    margin-bottom: 1.5rem;
+}
+
+.btn-block {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+}
