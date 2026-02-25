@@ -31,13 +31,13 @@ const Contact = ({ showToast }) => {
                         <div className="contact-card">
                             <i className="fas fa-map-marker-alt"></i>
                             <h4>Visit Us</h4>
-                            <p>123 Healthcare Avenue, Medical District, City 12345</p>
+                            <p>Healthcare Avenue, Baner, Pune Maharashtra 411052</p>
                         </div>
                         <div className="contact-card">
                             <i className="fas fa-phone"></i>
                             <h4>Call Us</h4>
-                            <p>+1 (555) 123-4567</p>
-                            <p>+1 (555) 765-4321</p>
+                            <p>+91 8767004746</p>
+                            <p>+91 9322142405</p>
                         </div>
                         <div className="contact-card">
                             <i className="fas fa-envelope"></i>
